@@ -2,7 +2,6 @@
 
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
-![image](ttps://github.com/user-attachments/assets/f4d045e6-0536-4909-b466-63a5c0a6f355))
 
 ## Ferramentas utilizadas:
 
@@ -14,7 +13,7 @@
 
 ## Feito por:
 
-### Joana Santos
+### Davidson junio 
 
 ### Linkedin: https://www.linkedin.com/in/davidson-junio-desenvolvedor-web/
 
