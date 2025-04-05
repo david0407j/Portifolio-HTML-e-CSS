@@ -1,70 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Davidson Junio</title>
+    <meta name="description" content="Portfólio de Davidson Junio - Desenvolvedor Back-End especializado em Python, Django e PostgreSQL">
+    <meta name="keywords" content="Desenvolvedor Back-End, Python, Django, PostgreSQL, AWS, Docker">
+    <meta name="author" content="Davidson Junio">
+    
+    <title>Davidson Junio | Desenvolvedor Back-End</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    
+    <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        <nav class="cabecalho__menu" aria-label="Navegação principal">
+            <ul class="cabecalho__menu__lista">
+                <li><a class="cabecalho__menu__link" href="index.html">Home</a></li>
+                <li><a class="cabecalho__menu__link" href="about.html">Sobre mim</a></li>
+            </ul>
         </nav>
     </header>
     
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">
-                Olá! Sou <span class="titulo-destaque">Davidson Junio</span>, um desenvolvedor Back-End apaixonado por tecnologia, inovação e resolução de problemas complexos.
-            </p>
-            <p class="apresentacao__conteudo__texto">
-                Tenho experiência em <strong>Python, Django e PostgreSQL</strong>, além de conhecimentos sólidos em Linux, AWS, Docker e CI/CD.
-            </p>
-            <p class="apresentacao__conteudo__texto">
-                Busco sempre entregar soluções escaláveis e de alta qualidade. Vamos conversar!
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Seção Sobre Mim -->
+        <section class="apresentacao" aria-labelledby="sobre-mim-titulo">
+            <div class="apresentacao__conteudo">
+                <h1 id="sobre-mim-titulo" class="apresentacao__conteudo__titulo">Sobre mim</h1>
+                <div class="apresentacao__conteudo__texto">
+                    <p>
+                        Olá! Sou <span class="titulo-destaque">Davidson Junio</span>, um desenvolvedor Back-End apaixonado por tecnologia, inovação e resolução de problemas complexos.
+                    </p>
+                    <p>
+                        Tenho experiência em <strong class="destaque-habilidade">Python</strong>, <strong class="destaque-habilidade">Django</strong> e <strong class="destaque-habilidade">PostgreSQL</strong>, além de conhecimentos sólidos em <strong>Linux</strong>, <strong>AWS</strong>, <strong>Docker</strong> e <strong>CI/CD</strong>.
+                    </p>
+                    <p>
+                        Busco sempre entregar soluções escaláveis e de alta qualidade. Vamos conversar!
+                    </p>
+                </div>
+            </div>
+            
+            <figure class="apresentacao__imagem">
+                <img src="./img/Imagem.png" alt="Davidson Junio programando" class="foto-perfil" width="300" height="300">
+                <figcaption class="sr-only">Davidson Junio - Desenvolvedor Back-End</figcaption>
+            </figure>
+        </section>
+        
+        <!-- Seção Projetos -->
+        <section class="projetos" aria-labelledby="projetos-titulo">
+            <h2 id="projetos-titulo" class="apresentacao__conteudo__titulo">Meus Projetos</h2>
+            <ul class="projetos__lista">
+                <li class="projetos__item">
+                    <a href="https://viralatacultural.com.br/" target="_blank" rel="noopener noreferrer" class="projetos__link">
+                        <i class="fas fa-paw projetos__icone" aria-hidden="true"></i>
+                        <span>Projeto Freelancer - Viralata Cultural</span>
+                        <i class="fas fa-external-link-alt projetos__icone-externo" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="projetos__item">
+                    <a href="https://jogo-gamma-rust.vercel.app/" target="_blank" rel="noopener noreferrer" class="projetos__link">
+                        <i class="fas fa-gamepad projetos__icone" aria-hidden="true"></i>
+                        <span>Jogo - Adivinhação</span>
+                        <i class="fas fa-external-link-alt projetos__icone-externo" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="projetos__github">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                Confira meus projetos no 
+                <a href="https://github.com/david0407j" target="_blank" rel="noopener noreferrer" class="projetos__github-link">
+                    GitHub
+                </a>
             </p>
         </section>
+        
+        <!-- Seção Redes Sociais -->
+        <section class="redes-sociais" aria-labelledby="redes-sociais-titulo">
+            <h2 id="redes-sociais-titulo" class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
+            <div class="redes-sociais__container">
+                <a href="https://github.com/david0407j" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="GitHub">
+                    <i class="fab fa-github redes-sociais__icone"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/davidson-castro-741323241/" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin redes-sociais__icone"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:seu-email@gmail.com" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="E-mail">
+                    <i class="fas fa-envelope redes-sociais__icone"></i>
+                    <span>E-mail</span>
+                </a>
+                <a href="http://wa.me/5531999877987" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp redes-sociais__icone"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </section>
     </main>
-
-    <section class="projetos">
-        <h2 class="apresentacao__conteudo__titulo">Meus Projetos</h2>
-        <ul>
-            <li><a href="https://viralatacultural.com.br/" target="_blank">Projeto Freelancer - Viralata Cultural</a></li>
-            <li><a href="https://jogo-gamma-rust.vercel.app/" target="_blank">Jogo - Adivinhação</a></li>
-        </ul>
-    </section>
-
-    <p class="apresentacao__conteudo__texto">
-        📂 Confira meus projetos no 
-        <a href="https://github.com/david0407j" target="_blank" style="color: #22D4FD; text-decoration: none; font-weight: 600;">GitHub</a>
-    </p>
-
-    <img src="./img/Imagem.png" alt="Foto da Davidson programando" class="foto-perfil">
-
-    <section class="apresentacao__links">
-        <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
-        <a href="https://github.com/david0407j" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=GitHub&logo=github&label=&color=181717&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="GitHub logo" />
-        </a>
-        <a href="https://www.linkedin.com/in/davidson-castro-741323241/" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="LinkedIn logo" />
-        </a>
-        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="Gmail logo" />
-        </a>
-        <a href="http://wa.me/5531999877987" target="_blank">
-            <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="Whatsapp logo" />
-        </a>
-    </section>
-
+    
+    <!-- Rodapé -->
     <footer class="rodape">
-        <p>Desenvolvido por Davidson Junio.</p>
+        <div class="rodape__conteudo">
+            <p>Desenvolvido com <i class="fas fa-heart rodape__icone" aria-hidden="true"></i> por Davidson Junio</p>
+            <p class="rodape__copyright">&copy; <span id="ano-atual"></span> - Todos os direitos reservados</p>
+        </div>
     </footer>
-    </section>
+    
+    <!-- Script para ano atual -->
+    <script>
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
 
