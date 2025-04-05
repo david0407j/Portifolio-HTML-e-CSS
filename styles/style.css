@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    /* Cores */
+    --primary-color: #22D4FD;
+    --primary-dark: #1A98C7;
+    --secondary-color: #E0E0E0;
+    --bg-color: #000000;
+    --bg-secondary: #111111;
+    --bg-secondary-light: #1E1E1E;
+    
+    /* Espaçamentos */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    
+    /* Bordas */
+    --border-radius: 8px;
+    --border-radius-circle: 50%;
+    
+    /* Transições */
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+    
+    /* Sombras */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 6px 10px rgba(34, 212, 253, 0.2);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,105 +39,234 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000;
-    color: #22D4FD;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 1.6;
 }
 
+/* Cabeçalho */
 .cabecalho {
     width: 100%;
-    background: #111;
-    padding: 15px 0;
+    background: var(--bg-secondary);
+    padding: var(--spacing-medium) 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-large);
+    flex-wrap: wrap;
 }
 
 .cabecalho__menu a {
-    color: #22D4FD;
+    color: var(--primary-color);
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-normal);
+    position: relative;
 }
 
+.cabecalho__menu a:hover {
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.cabecalho__menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width var(--transition-normal);
+}
+
+.cabecalho__menu a:hover::after {
+    width: 100%;
+}
+
+/* Conteúdo Principal */
 .apresentacao {
     max-width: 1200px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+    justify-content: space-around;
+    padding: var(--spacing-large) 0;
+    margin: var(--spacing-large) auto;
+    gap: var(--spacing-large);
 }
 
 .apresentacao__conteudo {
     flex: 1;
     min-width: 300px;
-    margin: 20px;
+    max-width: 600px;
+    padding: var(--spacing-medium);
+    animation: fadeIn 1s ease-in-out;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 28px;
+    font-size: 2.5rem;
     font-family: 'Krona One', sans-serif;
-    color: #22D4FD;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    line-height: 1.2;
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 18px;
-    color: #E0E0E0;
+    font-size: 1.125rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-medium);
 }
 
 .foto-perfil {
-    max-width: 180px;
+    max-width: 250px;
+    width: 100%;
     height: auto;
-    border-radius: 50%;
-    margin: 20px;
-    border: 3px solid #22D4FD;
+    border-radius: var(--border-radius-circle);
+    border: 3px solid var(--primary-color);
+    transition: all var(--transition-slow);
+    box-shadow: 0 0 20px rgba(34, 212, 253, 0.3);
 }
 
+.foto-perfil:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(34, 212, 253, 0.5);
+}
+
+/* Seção de Projetos */
 .projetos {
     width: 90%;
     max-width: 800px;
-    text-align: center;
-    margin-top: 20px;
+    margin: var(--spacing-large) auto;
+    padding: var(--spacing-medium);
+    background-color: var(--bg-secondary-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.projetos h2 {
+    font-family: 'Krona One', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+    font-size: 2rem;
 }
 
 .projetos ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
 }
 
 .projetos li {
-    margin: 10px 0;
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-normal);
+}
+
+.projetos li:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-hover);
 }
 
 .projetos a {
-    color: #22D4FD;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s;
+    font-size: 1.125rem;
+    display: block;
+    transition: color var(--transition-fast);
 }
 
 .projetos a:hover {
-    color: #1A98C7;
+    color: var(--primary-dark);
 }
 
+/* Rodapé */
 .rodape {
     width: 100%;
     text-align: center;
-    background: #111;
-    color: #22D4FD;
-    padding: 15px 0;
-    margin-top: 20px;
+    background: var(--bg-secondary);
+    color: var(--primary-color);
+    padding: var(--spacing-medium) 0;
+    margin-top: auto;
     font-weight: 600;
+    font-size: 1rem;
 }
 
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
+    :root {
+        --spacing-medium: 15px;
+        --spacing-large: 20px;
+    }
+    
     .apresentacao {
         flex-direction: column;
         text-align: center;
+        padding: var(--spacing-medium);
     }
-
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 2rem;
+    }
+    
     .foto-perfil {
-        max-width: 150px;
+        max-width: 180px;
+        margin-bottom: var(--spacing-medium);
+    }
+    
+    .cabecalho__menu {
+        gap: var(--spacing-small);
+    }
+    
+    .cabecalho__menu a {
+        font-size: 1rem;
+        padding: var(--spacing-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .apresentacao__conteudo__titulo {
+        font-size: 1.75rem;
+    }
+    
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+    }
+    
+    .projetos h2 {
+        font-size: 1.5rem;
+    }
+    
+    .projetos a {
+        font-size: 1rem;
     }
 }
