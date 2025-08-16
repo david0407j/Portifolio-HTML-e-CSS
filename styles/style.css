@@ -97,7 +97,7 @@ body {
     transform: scale(1.08);
 }
 
-/* Seção Projetos */
+/* Projetos */
 .projetos {
     padding: 4rem 2rem;
     text-align: center;
@@ -109,8 +109,7 @@ body {
     color: #22D4FD;
 }
 
-.projetos__lista,
-.grid-projetos {
+.projetos__lista {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.8rem;
@@ -118,7 +117,6 @@ body {
     margin: 0 auto;
 }
 
-.card-projeto,
 .projetos__item {
     background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
     padding: 1.5rem;
@@ -127,42 +125,26 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card-projeto:hover,
 .projetos__item:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(34, 212, 253, 0.3);
 }
 
-.card-projeto h3 {
-    color: #fff;
-    margin-bottom: 0.8rem;
-}
-
-.card-projeto p {
-    color: #aaa;
-    margin-bottom: 1rem;
-}
-
-.card-projeto a {
+.projetos__link {
     color: #22D4FD;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.card-projeto a:hover {
+.projetos__link:hover {
     color: #fff;
 }
 
-/* Redes Sociais / Contato */
-.contato, .redes-sociais {
+/* Redes Sociais */
+.redes-sociais {
     padding: 4rem 2rem;
     text-align: center;
-}
-
-.contato h2 {
-    color: #22D4FD;
-    margin-bottom: 1.5rem;
 }
 
 .redes-sociais__container {
@@ -227,13 +209,13 @@ body {
         height: 260px;
     }
 
-    .grid-projetos {
+    .projetos__lista {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    .grid-projetos {
+    .projetos__lista {
         grid-template-columns: repeat(3, 1fr);
     }
 }
