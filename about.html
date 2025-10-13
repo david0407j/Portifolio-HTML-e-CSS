@@ -1,158 +1,151 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim | Davidson Junio</title>
+    <meta name="description" content="Portfólio de Davidson Junio, Desenvolvedor Back-End Júnior com foco em Python, Django e PostgreSQL. Soluções escaláveis e de alta qualidade.">
+    <meta name="keywords" content="Desenvolvedor Back-End, Python, Django, PostgreSQL, AWS, Docker, Portfolio">
+    <meta name="author" content="Davidson Junio">
+    
+    <title>Davidson Junio | Desenvolvedor Back-End Python/Django</title>
+    
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ8uR04M+i5A5Y/z9i6l8R5A5oX5L5Q+5y5G5E5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <!-- Cabeçalho -->
+    
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
+        <div class="container">
+            <nav class="cabecalho__menu" aria-label="Navegação principal">
+                <ul class="cabecalho__menu__lista">
+                    <li><a class="cabecalho__menu__link" href="#sobre-mim">Sobre mim</a></li>
+                    <li><a class="cabecalho__menu__link" href="#projetos">Projetos</a></li>
+                    <li><a class="cabecalho__menu__link" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <!-- Conteúdo Principal -->
-    <main class="apresentacao">
+    
+    <main class="container">
         
-        <!-- Seção Sobre Mim -->
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">
-                Olá! Sou <strong>Davidson Junio</strong>, um desenvolvedor Back-End apaixonado por tecnologia e inovação. 
-                Tenho experiência sólida em <strong>Python</strong>, <strong>Django</strong> e <strong>PostgreSQL</strong>, criando soluções escaláveis e eficientes.
-            </p>
-            <p class="apresentacao__conteudo__texto destaque">
-                Desenvolvedor Back-End Júnior | Python | Django | PostgreSQL | Docker | Linux
+        <section id="sobre-mim" class="apresentacao" aria-labelledby="sobre-mim-titulo">
+            <div class="apresentacao__conteudo">
+                <h1 id="sobre-mim-titulo" class="apresentacao__conteudo__titulo">
+                    Desenvolvedor <span class="titulo-destaque">Back-End Júnior</span> | Python
+                </h1>
+                
+                <div class="apresentacao__conteudo__texto">
+                    <p>
+                        Olá! Sou <strong class="titulo-destaque">Davidson Junio</strong>, um desenvolvedor Back-End apaixonado por tecnologia, inovação e resolução de problemas complexos.
+                    </p>
+                    <p>
+                        Minha expertise reside em <strong class="titulo-destaque">Python</strong>, <strong class="titulo-destaque">Django</strong> e <strong class="titulo-destaque">PostgreSQL</strong>, com conhecimento em **Linux**, **AWS**, **Docker** e **CI/CD**.
+                    </p>
+                    <p>
+                        Busco sempre entregar soluções escaláveis e de alta qualidade. Vamos conversar sobre o seu próximo desafio!
+                    </p>
+                </div>
+            </div>
+            
+            <figure class="apresentacao__imagem">
+                <img 
+                    src="./img/foto.jpg" 
+                    alt="Foto de perfil de Davidson Junio, Desenvolvedor Back-End" 
+                    class="foto-perfil" 
+                    width="300" 
+                    height="300"
+                    loading="lazy"
+                >
+            </figure>
+        </section>
+        
+        <section id="projetos" class="projetos" aria-labelledby="projetos-titulo">
+            <h2 id="projetos-titulo" class="projetos__titulo">🚀 Portfólio & Projetos Recentes</h2>
+            
+            <ul class="projetos__lista">
+                <li class="projetos__item">
+                    <article>
+                        <h3>Viralata Cultural</h3>
+                        <p>Site institucional para companhia artística, desenvolvido com Django e estilização em Bootstrap.</p>
+                        <a href="https://viralatacultural.com.br/" target="_blank" rel="noopener noreferrer" class="projetos__link">
+                            Ver Projeto <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </li>
+                <li class="projetos__item">
+                    <article>
+                        <h3>Parques de Contagem</h3>
+                        <p>Portal interativo de mapeamento de parques, utilizando Django, PostgreSQL e sistema de geolocalização.</p>
+                        <a href="https://vivocontagem.com.br/" target="_blank" rel="noopener noreferrer" class="projetos__link">
+                            Ver Projeto <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </li>
+                <li class="projetos__item">
+                    <article>
+                        <h3>Jogo - Adivinhação</h3>
+                        <p>Pequeno game construído em JavaScript puro, demonstrando lógica front-end e deploy no Vercel.</p>
+                        <a href="https://jogo-gamma-rust.vercel.app/" target="_blank" rel="noopener noreferrer" class="projetos__link">
+                            Ver Projeto <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </li>
+                <li class="projetos__item">
+                    <article>
+                        <h3>Amigo Secreto Sorteador</h3>
+                        <p>Aplicação simples em JS para sorteio automático de grupos de amigo secreto.</p>
+                        <a href="https://amigos-secreto-git-main-david0407js-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="projetos__link">
+                            Ver Projeto <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+            
+            <p class="apresentacao__conteudo__texto projetos__repositorios">
+                📂 Confira mais projetos no 
+                <a href="https://github.com/david0407j" target="_blank" class="titulo-destaque" rel="noopener noreferrer">GitHub</a>
             </p>
         </section>
-
-        <!-- Imagem de Perfil -->
-        <figure class="apresentacao__imagem">
-            <img src="./img/foto.jpg" alt="Foto do Davidson Junio programando" class="foto-perfil">
-            <figcaption class="sr-only">Davidson Junio - Desenvolvedor Back-End</figcaption>
-        </figure>
+        
+        <section id="contato" class="redes-sociais" aria-labelledby="redes-sociais-titulo">
+            <h2 id="redes-sociais-titulo" class="redes-sociais__titulo">Acesse minhas redes</h2>
+            
+            <div class="redes-sociais__container">
+                <a href="https://github.com/david0407j" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="GitHub de Davidson Junio">
+                    <i class="fab fa-github redes-sociais__icone"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/davidson-junio-desenvolvedor-web/" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="LinkedIn de Davidson Junio">
+                    <i class="fab fa-linkedin redes-sociais__icone"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:seu.email@gmail.com" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="E-mail de Davidson Junio">
+                    <i class="fas fa-envelope redes-sociais__icone"></i>
+                    <span>E-mail</span>
+                </a>
+                <a href="http://wa.me/5531999877987" target="_blank" rel="noopener noreferrer" class="redes-sociais__link" aria-label="WhatsApp de Davidson Junio">
+                    <i class="fab fa-whatsapp redes-sociais__icone"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </section>
+        
     </main>
-
-    <!-- Seção Habilidades -->
-    <section class="habilidades">
-        <h2>⌨️ Linguagens & Tecnologias</h2>
-        <p>🪨 <strong>Back-end:</strong> Python | Django | API-REST</p>
-        <p>💻 <strong>Front-end:</strong> JavaScript | HTML5 | CSS3 | Bootstrap</p>
-        <p>🛠️ <strong>Ferramentas:</strong> VS Code | Git | Shell | Linux | GitHub | Markdown | Docker | PyTest</p>
-        <p>☁️ <strong>Cloud:</strong> AWS | Fly.io | Vercel</p>
-        <p>🎲 <strong>Banco de Dados:</strong> PostgreSQL</p>
-        <p>🚀 <strong>Outros:</strong> GA</p>
-    </section>
-
-    <!-- Seção Contato -->
-    <section class="contato">
-        <h2>📫 Contato</h2>
-        <p>
-            <a href="https://www.linkedin.com/in/davidson-castro-741323241/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-        </p>
-        <p>
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
-                <i class="fa-solid fa-envelope"></i> Gmail
-            </a>
-        </p>
-        <p>
-            <a href="https://wa.me/5531999877987" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-        </p>
-    </section>
-
-    <!-- Seção Fluxo de Trabalho -->
-    <section class="workflow">
-        <h2>🛠️ Meu Fluxo de Trabalho</h2>
-        <ul>
-            <li>💻 Desenvolvimento: Utilizo Python e Django para criar aplicações robustas.</li>
-            <li>📦 Versionamento: Git e GitHub para gerenciar projetos e colaborar.</li>
-            <li>🌐 Front-end: HTML, CSS e Bootstrap para interfaces responsivas.</li>
-        </ul>
-
-        <h3>🛠 Ferramentas e Tecnologias</h3>
-        <ul>
-            <li>Linguagens: Python (avançado), SQL (intermediário)</li>
-            <li>Frameworks: Django, Docker</li>
-            <li>Controle de Versão: Git, GitHub</li>
-            <li>Sistemas Operacionais: Linux, Ubuntu, Windows</li>
-            <li>Ambientes de Desenvolvimento: VSCode, PyCharm</li>
-            <li>Banco de Dados: SQL (Docker)</li>
-        </ul>
-
-        <h3>🌱 Estou aprendendo</h3>
-        <ul>
-            <li>Docker: Para containerização de aplicações.</li>
-            <li>JavaScript: Para melhorar minhas habilidades em front-end.</li>
-        </ul>
-
-        <h3>🌈 Contribuições</h3>
-        <p>
-            Gostaria de contribuir para projetos de código aberto. Se você tiver um projeto em mente, sinta-se à vontade para me contatar!
-        </p>
-
-        <h3>🐍 Vamos nos conectar?</h3>
-        <p>
-            Adoro conhecer novos desenvolvedores e compartilhar conhecimento! Sinta-se à vontade para me adicionar.
-        </p>
-
-        <h3>🎨 Estilo de commits</h3>
-        <ul>
-            <li><code>feat:</code> Novas funcionalidades</li>
-            <li><code>fix:</code> Correção de bugs</li>
-            <li><code>docs:</code> Atualizações de documentação</li>
-            <li><code>style:</code> Alterações de estilo (sem mudar a lógica)</li>
-            <li><code>refactor:</code> Refatoração de código</li>
-            <li><code>test:</code> Adição de testes</li>
-        </ul>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section class="projetos">
-        <h2>🚀 Meus Projetos</h2>
-        <div class="grid-projetos">
-            <div class="card-projeto">
-                <h3>Viralata Cultural</h3>
-                <p>Site institucional para companhia artística - Django + Bootstrap</p>
-                <a href="https://viralatacultural.com.br/" target="_blank">Ver Projeto</a>
-            </div>
-            <div class="card-projeto">
-                <h3>Parques de Contagem</h3>
-                <p>Portal interativo para mapeamento de parques - Django + PostgreSQL</p>
-                <a href="https://vivocontagem.com.br/" target="_blank">Ver Projeto</a>
-            </div>
-            <div class="card-projeto">
-                <h3>Jogo Adivinhação</h3>
-                <p>Game em JavaScript - Deploy no Vercel</p>
-                <a href="https://jogo-gamma-rust.vercel.app/" target="_blank">Ver Projeto</a>
-            </div>
-            <div class="card-projeto">
-                <h3>Amigo Secreto</h3>
-                <p>Aplicação simples em JS para sorteio de amigos secretos</p>
-                <a href="https://amigos-secreto-git-main-david0407js-projects.vercel.app/" target="_blank">Ver Projeto</a>
-            </div>
-        </div>
-        <p class="apresentacao__conteudo__texto">
-            📂 Confira mais no 
-            <a href="https://github.com/david0407j" target="_blank" style="color: #22D4FD; font-weight: 600;">GitHub</a>
-        </p>
-    </section>
-
-    <!-- Rodapé -->
+    
     <footer class="rodape">
-        <p>Desenvolvido com ❤️ por Davidson Junio</p>
+        <div class="rodape__conteudo">
+            <p>Desenvolvido com <i class="fas fa-heart rodape__icone" aria-hidden="true"></i> por Davidson Junio</p>
+            <p class="rodape__copyright">&copy; <span id="ano-atual"></span> - Todos os direitos reservados</p>
+        </div>
     </footer>
-
+    
+    <script>
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
-

@@ -3,12 +3,12 @@
 ====================================================================*/
 :root {
     /* Cores */
-    --cor-fundo-principal: #0d0d0d;
-    --cor-fundo-secundario: #1a1a1a;
+    --cor-fundo-principal: hwb(0 100% 0%);
+    --cor-fundo-secundario: hsl(0, 0%, 100%);
     --cor-destaque-primaria: #22D4FD; /* Azul Ciano/Claro */
-    --cor-texto-principal: #f0f0f0;
+    --cor-texto-principal: #130202;
     --cor-texto-secundario: #a0a0a0;
-    --cor-shadow-dark: rgba(0, 0, 0, 0.7);
+    --cor-shadow-dark: rgb(237, 217, 217);
     --cor-shadow-highlight: rgba(34, 212, 253, 0.4);
 
     /* Tipografia */
